@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลงทะเบียน</title>
+</head>
+<body>
+    <h1 align="center"> <i><u>แบบฟอร์มลงทะเบียน</u></i></h1>
+    <form>
+        <div>
+            <label for="First Name">ชื่อ</label>
+            <input type="text" name="fname" placeholder="ป้อนชื่อของคุณ" required><!--ต้องกรอกข้อมูลถึงจะsaveได้-->
+            <label for="Last Name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;นามสกุล</label>
+            <input type="text" name="lname=" placeholder="ป้อนนามสกุลของคุณ"required>
+           
+        </div>
+        <div>
+            <br><label for="Phone">เบอร์โทรศัพท์</label>
+            <input type="tel" name="Phone" placeholder="ป้อนเบอร์โทรศัพย์ของคุณ">
+            <label for="E mail">อีเมล์</label>
+            <input type="text" name="E mail" placeholder="ป้อนอีเมล์ของคุณ"> 
+        </div>
+        <div>
+            <br><label for=" Data of brith">วัน เดือน ปี เกิด</label>
+            <input type="date" name="Data of brith" placeholder="ป้อนวันเดือนปีเกิดของคุณ"> 
+            <label for="Age"> อายุ</label>
+            <input type="number" name="Age" min="18" max="50" placeholder="ป้อนอายุของคุณ 18-55 ปี" value="18">  <label for="years">ปี</label>
+        </div>
+        <div>
+            <label for="lastname">เพศ</label>
+            <input type="radio" name="gender"> เพศชาย
+            <input type="radio" name="gender"> เพศหญิง
+            <input type="radio" name="gender"> เพศทางเลือก <input type="text" name="เพศ" placeholder="ป้อนเพศของคุณ"> 
+        </div>
+        <div>
+            <br><label for="address">ที่อยู่อาศัยปัจจุบัน</label>
+            <br><textarea name=""cols="80" rows="1" placeholder="ป้อนที่อยู่อาศัยปัจจุบัน" required></textarea>
+        </div>
+        <div>
+            <br><label for="address">ที่อยู่อาศัยตามทะเบียนบ้าน</label>
+            <br><textarea name=""cols="80" rows="1" placeholder="ป้อนที่อยู่อาศัยตามทะเบียนบ้าน" required></textarea>
+        </div>
+        <div>
+            <br>
+        </div><label for="lastname">ระดับการศึกษา</label>
+        <select name="edu" id="">
+            <option value="มัธยมศึกษาตอนต้น">มัธยมศึกษาตอนต้น</option>
+            <option value="มัธยมศึกษาตอนปลาย">มัธยมศึกษาตอนปลาย</option>
+            <option value="ปริญญาตรี" selected>ปริญญาตรี</option>
+            <option value="ปริญญาโท">ปริญญาโท</option>
+            <option value="ปริญญาเอก">ปริญญาเอก</option>
+        </select>
+        <div>
+           <br><label for="fname">กีฬาที่ชอบ</label> 
+           <input type="checkbox" name="fav">ฟุตบอล
+           <input type="checkbox" name="fav">ว่ายนํ้า
+           <input type="checkbox" name="fav">แบตมินตั้น
+           <input type="checkbox" name="fav">วิ่ง
+        </div>
+        <div>
+            <br><label for="lastname">แนบเอกสาร</label>
+            <input type="file" required>
+            <label for="">เว็ปไซค์</label>
+            <input type="url">
+        </div>
+        <div>
+            <input type="submit" value="บันทึกข้อมูล">
+            <button type="submit">บันทึกข้อมูล</button>
+            <input type="reset" name="" id="" value="ล้างข้อมูล">
+        </div>
+    </form>
+</body>
+</html>
